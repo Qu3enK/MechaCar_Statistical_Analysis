@@ -51,6 +51,22 @@ Statistics 4 - Lot Summary
 
 
 ## T-Tests on Suspension Coils
+Utilized the T-test method to determine if all manufacturing lots and each lot individually are statistically different from the population mean
+of 1,500 pounds per square inch.
+
+The t-test for the overall manufacturing lot yields a p-value of 0.06028 which is above our significance level of 0.05%. Based on the results, there is not sufficient evidnce to rejecy the null hypothesis and the two means are statistically similar. (*see Statistics 5*)
+
+Statistics 5 - PSI T-Test for All Manufacturing Lot
+![ttest_all_lots](https://user-images.githubusercontent.com/112449480/210878306-18291d87-4dd9-4eec-bf6f-18161ceccefa.png)
+
+
+L1 - pvalue - 1
+L2 = 0.6072
+L3 = 0.04168
+
+
+Statistics 6 - PSI T-Test for Each Manufacturing Lot
+![ttest_lots123](https://user-images.githubusercontent.com/112449480/210878334-e819d2a8-5db1-4954-96f7-a951cf087773.png)
 
 
 
