@@ -17,3 +17,13 @@ head(scoil_table)
 total_summary <- scoil_table %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep') #create summary table
 
 lot_summary <- scoil_table %>% group_by(Manufacturing_Lot) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance=var(PSI), SD=sd(PSI), .groups='keep') #create lot summary table
+
+#T-Tests on Suspension Coils
+?t.test()
+
+t.test(scoil_table$PSI, mu=1500) #PSI across all lots vs population mean
+
+#PSI for each lot vs the population mean
+t.test(subset(scoil_table$PSI,scoil_table$Manufacturing_Lot=="Lot1"), mu=1500) #Lot 1
+t.test(subset(scoil_table$PSI,scoil_table$Manufacturing_Lot=="Lot2"), mu=1500) #Lot 2
+t.test(subset(scoil_table$PSI,scoil_table$Manufacturing_Lot=="Lot3"), mu=1500) #Lot 3
