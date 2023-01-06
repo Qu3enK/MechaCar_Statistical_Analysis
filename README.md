@@ -51,7 +51,41 @@ Statistics 4 - Lot Summary
 
 
 ## T-Tests on Suspension Coils
+Utilized the T-test method to determine if all manufacturing lots and each lot individually are statistically different from the population mean
+of 1,500 pounds per square inch.
+
+The t-test for the overall manufacturing lot yields a p-value of 0.06028 which is above our significance level of 0.05%. Based on the results, there is not sufficient evidence to reject the null hypothesis and the two means are statistically similar. (*see Statistics 5*)
+
+Statistics 5 - PSI T-Test for All Manufacturing Lot
+![ttest_all_lots](https://user-images.githubusercontent.com/112449480/210878306-18291d87-4dd9-4eec-bf6f-18161ceccefa.png)
 
 
+The t-test for manufacturing lots 1 & 2 yield a p-value of 1 and 0.6072 respectively, which are above the 0.05% significance level. Based on the results, there is not sufficient evidence to reject the null hypothesis and the means for lots 1 & 2 are statistically similar to the population mean.  The mean for Lot 1 (1500) and Lot 2(1500.2) fall within the 95% confidence level. (*see Statistics 6*)
+
+For Lot3, the p-value is 0.04168, which is below the 0.05% significance level. Based on the results, there is sufficient evidence to reject the null hypothesis; however the mean (1496.14) falls within the 95% confidence level. (*see Statistics 6*)
+
+Statistics 6 - PSI T-Test for Each Manufacturing Lot
+![ttest_lots123](https://user-images.githubusercontent.com/112449480/210878334-e819d2a8-5db1-4954-96f7-a951cf087773.png)
+
+
+## Study Design: MechaCar vs Competition
+
+Additional analysis that can be executed is test how horsepower, city/highway fuel efficiency, maintenance cost or safety rating for MechaCar performs against the Competition.
+
+- What metric or metrics are you going to test?
+  
+  The metrics that would be test are city/highway fuel efficiency, maintenance cost and safety rating as these items tend to be the most important among consumers.
+
+- What is the null hypothesis or alternative hypothesis?
+
+  Null hypothesis = the mean of all groups are equal
+
+  Alternative hypothesis = at least one of the means is different from all other groups
+
+- What statistical test would you use to test the hypothesis? And why?
+  ANOVA test, as it would allows for test across two or more groups.
+
+- What data is needed to run the statistical test?
+  A random sample of 100 for MechaCar and the Competitor.  Also ensure that the data for both are contained in a single dataframe.
 
 [^1]: Utilize some of description from Module 16 work to assist in writing my background for the Challenge
