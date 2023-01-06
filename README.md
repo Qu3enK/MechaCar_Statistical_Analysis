@@ -83,9 +83,11 @@ Additional analysis that can be executed is test how horsepower, city/highway fu
   Alternative hypothesis = at least one of the means is different from all other groups
 
 - What statistical test would you use to test the hypothesis? And why?
+  
   ANOVA test, as it would allows for test across two or more groups.
 
 - What data is needed to run the statistical test?
+  
   A random sample of 100 for MechaCar and the Competitor.  Also ensure that the data for both are contained in a single dataframe.
 
 [^1]: Utilize some of description from Module 16 work to assist in writing my background for the Challenge
